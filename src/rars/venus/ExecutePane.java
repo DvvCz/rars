@@ -40,9 +40,9 @@ public class ExecutePane extends JDesktopPane {
         this.mainUI = mainUI;
         // Although these are displayed in Data Segment, they apply to all three internal
         // windows within the Execute pane.  So they will be housed here.
-        addressDisplayBase = new NumberDisplayBaseChooser("Hexadecimal Addresses",
+        addressDisplayBase = new NumberDisplayBaseChooser("Hex Addresses",
                 Globals.getSettings().getBooleanSetting(Settings.Bool.DISPLAY_ADDRESSES_IN_HEX));
-        valueDisplayBase = new NumberDisplayBaseChooser("Hexadecimal Values",
+        valueDisplayBase = new NumberDisplayBaseChooser("Hex Values",
                 Globals.getSettings().getBooleanSetting(Settings.Bool.DISPLAY_VALUES_IN_HEX));//VenusUI.DEFAULT_NUMBER_BASE);
         addressDisplayBase.setToolTipText("If checked, displays all memory addresses in hexadecimal.  Otherwise, decimal.");
         valueDisplayBase.setToolTipText("If checked, displays all memory and register contents in hexadecimal.  Otherwise, decimal.");

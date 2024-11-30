@@ -894,8 +894,8 @@ public class DataSegmentWindow extends JInternalFrame implements Observer {
         }
 
         /*
-         * The cells in the Address column are not editable.  
-      	* Value cells are editable except when displayed 
+         * The cells in the Address column are not editable.
+      	* Value cells are editable except when displayed
       	* in ASCII view - don't want to give the impression
       	* that ASCII text can be entered directly because
       	* it can't.  It is possible but not worth the
@@ -910,7 +910,7 @@ public class DataSegmentWindow extends JInternalFrame implements Observer {
 
         /*
          * JTable uses this method to determine the default renderer/
-         * editor for each cell.  
+         * editor for each cell.
          */
         public Class getColumnClass(int c) {
             return getValueAt(0, c).getClass();
